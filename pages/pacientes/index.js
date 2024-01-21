@@ -1,16 +1,15 @@
 import React from 'react';
 
-function Test() {
+
+export default function Pacientes() {
   return (
     <div>
       <header>
-        <h1>Test page</h1>
+        <h1>Pacientes</h1>
       </header>
       <main>
-        <div>This is a test page</div>
+        <div>Pacientes page</div>
       </main>
     </div>
   );
-}
-
-export default Test;
+};
