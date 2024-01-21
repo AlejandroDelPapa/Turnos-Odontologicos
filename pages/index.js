@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 
 function App() {
   return (
@@ -7,8 +8,12 @@ function App() {
         <h1>Banco de pacientes, frente odontológico estudiantil</h1>
       </header>
       <main>
-        <button>Pacientes</button>
-        <button>Alumnos</button>
+        <div>
+          <Link href="/pacientes">Pacientes</Link>
+        </div>
+        <div>
+          <Link href="/alumnos">Alumnos</Link>
+        </div>
       </main>
     </div>
   );
