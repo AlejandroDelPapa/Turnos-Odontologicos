@@ -1,0 +1,17 @@
+{
+    "name": "pacientes_y_alumnos",
+    "version": "1.0.0",
+    "description": "Proyecto de pacientes y alumnos",
+    "main": "app.jsx",
+    "scripts": {
+      "dev": "next dev",
+      "build": "next build",
+      "start": "next start",
+      "lint": "next lint"
+    },
+    "dependencies": {
+      "react": "^18",
+      "react-dom": "^18",
+      "next": "14.0.4"
+    }
+  }  
