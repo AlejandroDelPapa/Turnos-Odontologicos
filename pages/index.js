@@ -1,6 +1,4 @@
-// src/App.js
 import React from 'react';
-import './App.css'; // Puedes mantener o personalizar tus estilos aquí
 
 function App() {
   return (
