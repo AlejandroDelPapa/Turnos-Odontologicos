@@ -1,14 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
- 
-type ResponseData = {
-  id: number,
-  firstName: string,
-  lastName: string,
-}
+import type { Alumno } from './types';
  
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<ResponseData[]>
+  res: NextApiResponse<Alumno[]>
 ) {
   if (req.method === 'GET') {
     // the setTimeout is just to simulate an async request with 2 seconds delay

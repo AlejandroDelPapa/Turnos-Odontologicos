@@ -1,15 +1,10 @@
 import React from 'react';
 import styles from './Alumnos.module.css';
 import { useState, useEffect } from 'react'
-
-type ResponseData = {
-  id: number,
-  firstName: string,
-  lastName: string,
-}
+import type { Alumno } from '../api/alumnos/types'
 
 export default function Alumnos() {
-  const [data, setData] = useState<ResponseData[]>(null)
+  const [data, setData] = useState<Alumno[]>(null)
   const [isLoading, setLoading] = useState(true)
 
   useEffect(() => {
@@ -26,7 +21,7 @@ export default function Alumnos() {
   if (isLoading) return <p>Loading...</p>
   if (!data) return <p>No alumnos yet!</p>
 
-  function renderAlumno(alumno: ResponseData) {
+  function renderAlumno(alumno: Alumno) {
     return (
       <div>
         <p className={styles.red}>
