@@ -21,7 +21,7 @@ export default function App() {
     <div>
       <header>
         <h1 className="text-3xl font-bold underline">
-          Banco de pacientes, frente odontológico estudiantil
+          Hola Joaco
         </h1>
       </header>
       <main>
