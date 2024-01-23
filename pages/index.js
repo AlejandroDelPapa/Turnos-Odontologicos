@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router'
-
+import {Button} from "@nextui-org/button";
 
 export default function App() {
   const router = useRouter()
@@ -20,14 +20,16 @@ export default function App() {
   return (
     <div>
       <header>
-        <h1>Banco de pacientes, frente odontológico estudiantil</h1>
+        <h1 className="text-3xl font-bold underline">
+          Banco de pacientes, frente odontológico estudiantil
+        </h1>
       </header>
       <main>
         <div>
           <button onClick={navigateToPacientes}>Pacientes</button>
         </div>
         <div>
-          <button onClick={navigateToAlumnos}>Alumnos</button>
+          <Button color='primary' onClick={navigateToAlumnos}>Alumnos</Button>
         </div>
       </main>
     </div>

@@ -21,7 +21,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/alumnos/index.tsx"  ],
+  ],
   "exclude": [
     "node_modules"
   ]

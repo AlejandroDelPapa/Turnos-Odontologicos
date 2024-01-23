@@ -1,10 +1,14 @@
+import Footer from '../components/footer/footer';
+import Navbar from '../components/navbar/navbar';
 import '../styles/global.css';
-import Layout from '../components/layout'
+import {NextUIProvider} from '@nextui-org/react'
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
+    <NextUIProvider>
+      <Navbar />
       <Component {...pageProps} />
-    </Layout>
-  )
+      <Footer />
+    </NextUIProvider>
+  );
 }
