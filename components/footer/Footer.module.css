@@ -1,0 +1,13 @@
+.background {
+    background-color: darkgray;
+}
+
+
+.line {
+    border-top: 1px solid #000000;
+    margin-bottom: 1rem;
+}
+
+.spacing {
+    margin: 1rem 0;
+}

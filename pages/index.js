@@ -1,7 +1,22 @@
 import React from 'react';
-import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-function App() {
+
+export default function App() {
+  const router = useRouter()
+
+
+  function navigateToPacientes() {
+    // this is another example on how to navigate using the useRouter hook
+    console.log('some stuff here');
+    router.push('/pacientes')
+  }
+
+  function navigateToAlumnos() {
+    // this is another example on how to navigate using the useRouter hook
+    router.push('/alumnos')
+  }
+
   return (
     <div>
       <header>
@@ -9,14 +24,12 @@ function App() {
       </header>
       <main>
         <div>
-          <Link href="/pacientes">Pacientes</Link>
+          <button onClick={navigateToPacientes}>Pacientes</button>
         </div>
         <div>
-          <Link href="/alumnos">Alumnos</Link>
+          <button onClick={navigateToAlumnos}>Alumnos</button>
         </div>
       </main>
     </div>
   );
 }
-
-export default App;
