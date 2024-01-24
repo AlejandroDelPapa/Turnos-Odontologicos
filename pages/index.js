@@ -1,6 +1,8 @@
 import React from 'react';
 import { useRouter } from 'next/router'
 import {Button} from "@nextui-org/button";
+import Image from 'next/image'
+import { Image as NextUiImage }  from "@nextui-org/image";
 
 export default function App() {
   const router = useRouter()
@@ -30,6 +32,14 @@ export default function App() {
         </div>
         <div>
           <Button color='primary' onClick={navigateToAlumnos}>Alumnos</Button>
+        </div>
+        <div class="my-3 space-y-2">
+          <Image src="/images/avatars/avatar.jpeg" alt="me" width="64" height="64" />
+          <NextUiImage
+            width={64}
+            alt="NextUI hero Image"
+            src="/images/avatars/avatar.jpeg"
+          />
         </div>
       </main>
     </div>
